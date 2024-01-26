@@ -8,9 +8,10 @@ public class Main {
 
         String s = br.readLine();
         int n = Integer.parseInt(br.readLine());
+        int sl = s.length();
 
-        for (int i = s.length()-1; i >= s.length()-n;i--) {
-            System.out.print(s.substring(i-1, i));
+        for (int i = sl-1; i > sl - n -1; i--) {
+            System.out.print(s.substring(i - 1, i));
         }
     }
 }
