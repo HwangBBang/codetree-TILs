@@ -11,9 +11,9 @@ public class Main {
         int sl = s.length();
 
         if (sl < n) {
-            for (int i = sl-1; i >0; i--) 
+            for (int i = sl-1; i >=0; i--)
                 System.out.print(s.substring(i, i + 1));
-        } else {
+        } else  {
             for (int i = sl-1; i > sl - n -1; i--) {
                 System.out.print(s.substring(i, i+1));
             }
