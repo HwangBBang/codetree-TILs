@@ -17,6 +17,7 @@ public class Main {
 
         for (int i = 0; i < s.length; i++) {
             if (c.equals(s[i].substring(s[i].length()-1,s[i].length()))) {
+                System.out.println(s[i]);
                 res.add(s[i]);
             }
         }
