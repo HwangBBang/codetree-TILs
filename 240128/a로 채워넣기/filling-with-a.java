@@ -8,7 +8,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
         StringBuilder stringBuilder = new StringBuilder(s);
-        stringBuilder.replace(2, 3, "a");
+        stringBuilder.replace(1, 2, "a");
         stringBuilder.replace(s.length()-2, s.length()-1, "a");
 
         System.out.println(stringBuilder);
