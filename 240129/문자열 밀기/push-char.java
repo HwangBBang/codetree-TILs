@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String oneLine = br.readLine().trim();
-        String secondLine = br.readLine().trim();
 
         StringBuilder result = new StringBuilder(oneLine);
 //        Queue <String> result
