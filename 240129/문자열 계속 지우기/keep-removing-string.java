@@ -11,18 +11,20 @@ public class Main {
         StringBuilder beRemoved = new StringBuilder(oneLine);
 
         int idx = 0;
+        int len = secondLine.length();
         while (true) {
+
             int totalLen = beRemoved.length();
-            int len = secondLine.length();
             // if 끝까지 탐색했다면 -> 종료
             if (idx +len > totalLen) break;
+
             if (beRemoved.substring(idx, idx + len).equals(secondLine)) {
                 beRemoved.delete(idx, idx + len);
                 idx = 0;
+                continue;
             }
             idx++;
         }
-
         System.out.println(beRemoved);
 
     }
