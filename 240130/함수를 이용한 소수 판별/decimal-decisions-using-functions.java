@@ -17,7 +17,7 @@ public class Main {
 
     static int sol(int a,int b) {
         int res = 0;
-        for (int i = a; i <= b; i++) if (isPrime(i)) res += i;
+        for (int i = a; i <= b; i++) if (isPrime(i) && i != 1) res += i;
         return res;
     }
 
