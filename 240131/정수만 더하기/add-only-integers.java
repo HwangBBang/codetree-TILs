@@ -8,15 +8,10 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = br.readLine();
         int sum = 0;
-
-        // 숫자가 아닌 문자를 모두 공백으로 대체
-        String[] numbers = input.replaceAll("[^0-9]", " ").split(" ");
-
-        // 분리된 숫자들을 순회하며 합산
-        for (String num : numbers) {
-            if (!num.isEmpty()) {
-                sum += Integer.parseInt(num);
-            }
+    
+        for(int i = 0; i < input.length(); i++) {
+            if(input.charAt(i) >= '0' && input.charAt(i) <= '9')
+                sum += (input.charAt(i) - '0');
         }
 
         System.out.println(sum);
