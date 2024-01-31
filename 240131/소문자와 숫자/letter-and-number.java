@@ -11,8 +11,7 @@ public class Main {
 
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-            sb.append((Character.isLetter(c)) ? Character.toLowerCase(c) : "");
-            sb.append((Character.isDigit(c)) ? (int)c : "");
+            sb.append((Character.isLetterOrDigit(c)) ? Character.toLowerCase(c) : "");
         }
         System.out.println(sb);
     }
