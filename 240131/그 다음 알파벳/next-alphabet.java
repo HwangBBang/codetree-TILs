@@ -8,7 +8,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int a = br.readLine().charAt(0);
-        a = (a == 122) ? 97 + 1 : a + 1;
+        a = (a == 122) ? 97 : a + 1;
         char c = (char) a;
 
         System.out.print(c);
