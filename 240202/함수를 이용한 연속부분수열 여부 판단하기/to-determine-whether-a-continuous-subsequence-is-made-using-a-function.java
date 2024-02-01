@@ -33,16 +33,21 @@ public class Main {
     }
 
     static boolean isSub(int[]A, int[]B) {
-        int outLen = A.length - B.length;
+        int outLen = A.length - B.length + 1;
         int innerLen = B.length;
-        boolean match = false;
+
+
         for (int i = 0; i < outLen; i++) {
+            boolean match = true;
+
             for (int j = 0; j < innerLen; j++) {
-                if (A[i + j] != B[j]) break;
-                if (j == innerLen-1) match = true;
+                if (A[i + j] != B[j]) {
+                    match = false;
+                    break;
+                }
             }
-            if (match == true) return match;
+            if (match) return match;
         }
-        return match;
+        return false;
     }
 }
