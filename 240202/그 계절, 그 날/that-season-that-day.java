@@ -42,20 +42,15 @@ public class Main {
     }
     public static boolean isLeapYear(int y) {
         boolean result;
-        if (y % 4 == 0) {
-            result = true;
+        if (y % 4 == 0){
             if (y % 100 == 0) {
-                if (y % 400 == 0) {
-                    result = true;
-                } else {
-                    result = false;
-                }
+                if (y % 400 == 0) result = true;
+                else result = false;
             } else {
-                result = false;
+                result = true;
             }
-        } else {
-            result = false;
         }
+        else{ result = false;}
         return result;
     }
 
