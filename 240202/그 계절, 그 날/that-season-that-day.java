@@ -56,7 +56,7 @@ public class Main {
             }
         }
         else{ result = false;}
-        System.out.println("result = " + result);
+//        System.out.println("result = " + result);
         return result;
     }
 
