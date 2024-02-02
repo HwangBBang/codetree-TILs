@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.StreamTokenizer;
 import java.util.StringTokenizer;
 
 
@@ -12,11 +13,11 @@ public class Main {
         int b = Integer.parseInt(st.nextToken());
 
         if (a > b) {
-            logic1(b);
-            logic2(a);
+            b = logic1(b);
+            a = logic2(a);
         } else {
-            logic1(a);
-            logic2(b);
+            a = logic1(a);
+            b = logic2(b);
         }
         System.out.println(a + " " + b);
     }
