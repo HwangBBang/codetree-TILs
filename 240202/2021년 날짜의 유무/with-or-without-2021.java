@@ -23,8 +23,8 @@ public class Main {
         if (m > 12 || d > 31) return false;
         if (m < 8) {
             if (m == 2) return (d > 28) ? false : true;
-            if (m%2 == 0) result = (d > 31) ? false : true;
-            else result = (d > 30) ? false : true;
+            if (m%2 == 0) result = (d > 30) ? false : true;
+            else result = (d > 31) ? false : true;
         } else {
             if (m%2 == 0) result = (d > 31) ? false : true;
             else result = (d > 30) ? false : true;
