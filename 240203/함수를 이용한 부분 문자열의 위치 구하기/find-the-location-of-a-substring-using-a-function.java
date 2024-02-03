@@ -16,7 +16,7 @@ public class Main {
         int len = str.length();
         int subLen = subStr.length();
 
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len-subLen; i++) {
             if (str.substring(i, i + subLen).equals(subStr)) {
                 return i;
             }
