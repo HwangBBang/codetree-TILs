@@ -13,10 +13,9 @@ public class Main {
     }
 
     private static int recFindMax(int[] nums, int n) {
-        if (1 == n) return nums[0];
-
-        return (nums[n-1] < recFindMax(nums, n-1)) ?
-             recFindMax(nums, n-1) : nums[n - 1];
+        if (n == 0) return nums[0];
+        int curMax = recFindMax(nums, n - 1);
+        return (nums[n-1] < curMax) ? curMax : nums[n - 1];
 
     }
 
