@@ -7,8 +7,8 @@ public class Main {
 
     }
     private  static int rec(int cur) {
-        if (cur == 1) return 1;
-        return (cur % 2 == 1) ? rec(cur / 2) + 1 : rec(cur / 3) + 1;
+        if (cur == 1) return 0;
+        return (cur % 2 == 0) ? rec(cur / 2) + 1 : rec(cur / 3) + 1;
     }
 
 }
