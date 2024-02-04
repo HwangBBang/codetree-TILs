@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = sc.nextInt();sc.nextLine();
         int[] ns = Arrays.stream(sc.nextLine().split(" "))
                 .mapToInt(s -> Integer.parseInt(s)).toArray();
 
@@ -16,8 +16,8 @@ public class Main {
         if (1 == n) return nums[0];
 
         return (nums[n-1] < recFindMax(nums, n-1)) ?
-         recFindMax(nums, n-1) : nums[n - 1]; 
-        
+             recFindMax(nums, n-1) : nums[n - 1];
+
     }
 
 }
