@@ -15,7 +15,7 @@ def sol (a,b,c):
     
     if c >= 11: m = c - 11
     else: 
-        m = c + 13
+        m = c + 49
         h -= 1
 
 
@@ -24,3 +24,7 @@ def sol (a,b,c):
     return res
 
 print(sol(a,b,c))
+
+
+11 11 11
+14 2 1
