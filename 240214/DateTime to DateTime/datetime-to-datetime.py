@@ -10,12 +10,12 @@ def sol (a,b,c):
     if b >= 11:
         h = b - 11
     else: 
-        h = b
+        h = b + 13
         d -= 1
     
     if c >= 11: m = c - 11
     else: 
-        m = c
+        m = c + 13
         h -= 1
 
 
