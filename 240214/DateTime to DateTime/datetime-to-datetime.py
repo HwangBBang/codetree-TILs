@@ -2,7 +2,7 @@ a, b, c = map(int, input().split())
 
 
 def sol (a,b,c):
-    if a < 11 and b < 11 and c < 11 : 
+    if a < 11 or (a < 11 and b < 11) or  (a < 11 and b < 11 and c < 11) : 
         return -1
     
     d = a - 11
@@ -24,3 +24,6 @@ def sol (a,b,c):
     return res
 
 print(sol(a,b,c))
+
+
+11 4 15
