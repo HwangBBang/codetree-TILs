@@ -7,11 +7,17 @@ def sol (a,b,c):
     
     d = a - 11
     
-    if b >= 11: h = b - 11
-    else: h = b
+    if b >= 11:
+        h = b - 11
+    else: 
+        h = b
+        d -= 1
     
     if c >= 11: m = c - 11
-    else: m = c
+    else: 
+        m = c
+        h -= 1
+
 
 
     res =  (d * 24 * 60) + (h * 60 ) + m
