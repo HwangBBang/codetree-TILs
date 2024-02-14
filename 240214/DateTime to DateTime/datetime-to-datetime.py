@@ -24,5 +24,3 @@ def sol (a,b,c):
     return res
 
 print(sol(a,b,c))
-
-11 4 15
