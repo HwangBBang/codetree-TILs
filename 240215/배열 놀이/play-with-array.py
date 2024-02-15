@@ -24,4 +24,4 @@ for _ in range(q):
         b = task[2]
 
         for i in range(a-1, b):
-            print(ans[i], end=" ")
+            print(nums[i], end=" ")
