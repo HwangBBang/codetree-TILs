@@ -1,31 +1,27 @@
-def firstFunc(n, arr):
-    print(arr[n-1])
+def findNum(n1):
+    for idx, el in enumerate(nums):
+        if el == n1:
+            return idx
+    return 0
 
 
-def secondFunc(n, arr):
-    for idx, elem in enumerate(arr):
-        if elem == n:
-            print(idx+1)
-            return
-    print(0)
-
-
-def thirdFunc(n, m, arr):
-    print(*arr[n-1:m])
-
-
-n, q = map(int, input().split())
-elems = list(map(int, input().split()))
+n, q = map(int, input().split())  # 원소가 주어지는지 개수를 알려주는n,질의의 개수를 알리는q
+nums = list(map(int, input().split()))  # n개의 원소를 받는 배열num
 
 for _ in range(q):
-    qs = list(map(int, input().split()))
-    q = qs[0]
-    a = qs[1]
-    
-    if q == 1:
-        firstFunc(a, elems)
-    elif q == 2:
-        secondFunc(a, elems)
-    else:
-        b = qs[2]
-        thirdFunc(a, b, elems)
+    task = list(map(int, input().split()))
+    a = task[1]
+
+    if task[0] == 1:  # a번쨰 원소출력
+        ans = nums[a-1]
+        print(ans)
+
+    elif task[0] == 2:  # a가 몇번째
+        ans = findNum(a)
+        print(ans+1)
+
+    elif task[0] == 3:
+        b = task[2]
+
+        for i in range(a-1, b):
+            print(ans[i], end=" ")
