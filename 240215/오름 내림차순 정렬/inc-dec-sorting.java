@@ -13,10 +13,18 @@ public class Main {
                         .toArray(Integer[]::new);
 
         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        for (Integer i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
 
         Arrays.sort(arr,Collections.reverseOrder());
-        System.out.println(Arrays.toString(arr));
+
+        for (Integer i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
 
     }
 
