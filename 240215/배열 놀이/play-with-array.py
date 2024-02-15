@@ -1,10 +1,10 @@
 def firstFunc(n, arr):
-    print(arr[a-1])
+    print(arr[n-1])
 
 
 def secondFunc(n, arr):
     for idx, elem in enumerate(arr):
-        if elem == a:
+        if elem == n:
             print(idx+1)
             return
     print(0)
@@ -21,6 +21,7 @@ for _ in range(q):
     qs = list(map(int, input().split()))
     q = qs[0]
     a = qs[1]
+    
     if q == 1:
         firstFunc(a, elems)
     elif q == 2:
